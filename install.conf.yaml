@@ -22,6 +22,11 @@
       relink: true
 
 # languages
+- link:
+    ~/.asdfrc:
+      path: asdf/.asdfrc
+      create: true
+      relink: true
 - asdf:
     - plugin: python
       global: 3.8.5
