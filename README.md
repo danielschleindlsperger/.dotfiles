@@ -4,6 +4,7 @@ My personal [dotfiles](https://dotfiles.github.io/) managed by [dotbot](https://
 
 ## TODO
 
+- configure macos settings: https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 - nvim config
 - emacs config
 
