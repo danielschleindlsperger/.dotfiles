@@ -4,9 +4,8 @@ My personal [dotfiles](https://dotfiles.github.io/) managed by [dotbot](https://
 
 ## TODO
 
-- Homebrew: figure out remaining dependencies
-- .zshrc
 - nvim config
+- emacs config
 
 ## Initial setup
 
@@ -15,3 +14,10 @@ git clone https://github.com/danielschleindlsperger/.dotfiles ~/.dotfiles
 cd ~/.dotfiles
 ./install.sh
 ```
+
+### Further Steps
+
+- Log into 1Password for secrets and keys
+- Import (or create) SSH private keys
+  - Adjust gitconfig
+- Change this repo's remote to use ssh
