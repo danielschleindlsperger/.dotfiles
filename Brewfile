@@ -15,9 +15,8 @@ cask_args language: "en"
 # cask "docker" # whales https://www.docker.com/
 # cask "1password" # password manager https://1password.com/
 # cask "slack" # more distracting email https://slack.com/
-
-# TODO: Bear
-# TODO: Microsoft Todo
+mas "Bear", id: 1091189122
+mas "Microsoft To Do", id: 1274495053
 # TODO: Email client (Outlook?)
 
 # core stuff

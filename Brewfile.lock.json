@@ -589,6 +589,16 @@
       "whalebrew/kubectl": "cc7763dde20797eff28f056deab6d84b0b0977e178f5b51d3fd34d842fff4235",
       "whalebrew/helm": "dd5c4b22057934fadcd99cb6dc15c0da8ceacf2d7221dc2a3e2a3de922d486cd",
       "whalebrew/terraform": "75f2d0e6f0c38cc05e7345361164fa7713ff1bb6b5d62cf32d2e777361f78dea"
+    },
+    "mas": {
+      "Bear": {
+        "id": "1091189122",
+        "version": "1.7.13"
+      },
+      "Microsoft To Do": {
+        "id": "1274495053",
+        "version": "2.22"
+      }
     }
   },
   "system": {
