@@ -29,7 +29,7 @@ brew "clojure"
 brew "leiningen" # clojure build tool
 brew "scala"
 brew "sbt" # scala build tool https://www.scala-sbt.org/
-brew "jabba" # version manager for java https://github.com/shyiko/jabba
+# brew "jabba" # version manager for java https://github.com/shyiko/jabba, installed manually, leave commented!
 # brew "node" # nodejs
 brew "nvm" # version manager for nodejs https://github.com/nvm-sh/nvm
 brew "shellcheck"
