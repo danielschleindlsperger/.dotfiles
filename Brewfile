@@ -20,23 +20,27 @@ cask_args language: "en"
 # TODO: Microsoft Todo
 # TODO: Email client (Outlook?)
 
+# core stuff
+brew "coreutils"
+brew "curl"
+brew "git"
+brew "gpg"
+brew "openssl"
+brew "readline"
+brew "bison", link: true, force: true, conflicts_with: ["bison"] # TODO: link properly, this is currently broken
+
 ## fonts
 cask "font-fira-code-nerd-font"
 # TODO: more fonts
 
 ## languages
-brew "clojure"
+brew "asdf" # version manager for almost all languages https://asdf-vm.com
 brew "leiningen" # clojure build tool
 brew "scala"
 brew "sbt" # scala build tool https://www.scala-sbt.org/
-# brew "jabba" # version manager for java https://github.com/shyiko/jabba, installed manually, leave commented!
-# brew "node" # nodejs
-brew "nvm" # version manager for nodejs https://github.com/nvm-sh/nvm
 brew "shellcheck"
-brew "sbcl" # common lisp http://www.sbcl.org/
 # TODO: php
 # brew "composer" # php package manager
-# TODO: python
 # TODO: ruby
 
 ## shell

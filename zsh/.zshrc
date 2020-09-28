@@ -20,23 +20,7 @@ source /usr/local/etc/profile.d/z.sh # source `z` utility, installed with brew
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export PATH="/usr/local/Cellar/php/7.4.1/bin:$PATH"
 export PATH="/Users/$USER/.emacs.d/bin:$PATH"
-
-# PHPBREW
-[[ -e ~/.phpbrew/bashrc ]]
-source ~/.phpbrew/bashrc
-
-switchphp() {
-  brew unlink php && brew link --force --overwrite "php@$1"
-}
-
-# # Ruby
-# export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init -)"
-
-# JABBA (JDK version switcher)
-[ -s "/Users/${USER}/.jabba/jabba.sh" ] && source "/Users/${USER}/.jabba/jabba.sh"
 
 #
 # ALIASES
@@ -48,3 +32,7 @@ alias phpunit="vendor/bin/phpunit"
 # AUTOCOMPLETIONS
 #
 ## TODO
+
+# for some reason this needs to come after setting $PATH and after initializing oh-my-zsh
+source "$(brew --prefix asdf)/asdf.sh"
+source ~/.asdf/plugins/java/set-java-home.zsh

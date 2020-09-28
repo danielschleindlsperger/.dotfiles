@@ -8,6 +8,9 @@ DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# currently the easiest way to use the nodejs asdf plugin https://github.com/asdf-vm/asdf-nodejs
+export NODEJS_CHECK_SIGNATURES="no"
+
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive
@@ -16,5 +19,6 @@ git submodule update --init --recursive
   -d "${BASEDIR}" \
   --plugin-dir dotbot-brew \
   --plugin-dir dotbot-vscode \
+  --plugin-dir dotbot-asdf \
   -c "${CONFIG}" "${@}"
 
