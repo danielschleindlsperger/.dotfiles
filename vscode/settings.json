@@ -1,0 +1,116 @@
+{
+  "editor.fontFamily": "Fira Code Retina",
+  "terminal.integrated.fontFamily": "Fira Code Retina",
+  "editor.rulers": [100],
+  "editor.minimap.enabled": false,
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 25,
+  "editor.smoothScrolling": true,
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "window.zoomLevel": 0,
+  "emmet.includeLanguages": {
+    "vue-html": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.validate": ["javascript", "javascriptreact", "html", "typescriptreact"],
+  "sassFormat.indent": 2,
+  "javascript.validate.enable": true,
+  "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.openEditors.visible": 0,
+  "tslint.jsEnable": false,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "search.exclude": {
+    "**/bower_components": false,
+    "**/node_modules": false
+  },
+  "prettier.printWidth": 100,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorCustomizations": {},
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.lineNumbers": "relative",
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "#111111",
+  "vim.easymotionMarkerForegroundColorOneChar": "#eeeeee",
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [" "],
+      "commands": ["vspacecode.space"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [" "],
+      "commands": ["vspacecode.space"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [],
+  "vim.normalModeKeyBindings": [],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.lastDownload": 1601283072873,
+  "explorer.confirmDelete": false,
+  "vim.history": 1000,
+  "vim.neovimPath": "/usr/local/bin/nvim",
+  "vim.useSystemClipboard": true,
+  "calva.prettyPrintingOptions": {
+    "enabled": true,
+    "printEngine": "pprint",
+    "width": 120,
+    "maxLength": 50
+  },
+  "calva.paredit.defaultKeyMap": "strict",
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true,
+    "**/target": true
+  }
+}

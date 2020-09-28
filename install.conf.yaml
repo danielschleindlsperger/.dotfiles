@@ -1,0 +1,25 @@
+# homebrew formulae
+- brewfile:
+    - Brewfile
+
+- link:
+    ~/.gitconfig: gitconfig
+    ~/.ssh/config:
+      path: ssh/config
+      create: true
+    ~/.vim/vimrc:
+      path: vim/vimrc
+      create: true
+
+# vscode
+- vscodefile:
+    file: vscode/extensions.txt
+- link:
+    ~/Library/Application Support/Code/User/settings.json:
+      path: vscode/settings.json
+      create: true
+      relink: true
+    ~/Library/Application Support/Code/User/keybindings.json:
+      path: vscode/keybindings.json
+      create: true
+      relink: true
