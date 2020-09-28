@@ -60,10 +60,10 @@ brew "watch"
 # brew "d12frosted/emacs-plus/emacs-plus@28" # emacs
 
 ## tools
-brew "helm" # kubernetes package manager https://helm.sh/
-brew "terraform" # infrastructure as code https://www.terraform.io/
-brew "ansible" # it automation https://docs.ansible.com/ansible/latest/index.html
+whalebrew "whalebrew/awscli"
+whalebrew "whalebrew/ansible" # it automation https://docs.ansible.com/ansible/latest/index.html
+whalebrew "whalebrew/kubectl" # kubernetes control cli
+whalebrew "whalebrew/helm" # kubernetes package manager https://helm.sh/
+whalebrew "whalebrew/terraform" # infrastructure as code https://www.terraform.io/
 
-# TODOs
-# awscli # TODO: as docker image?
 # borkdude/brew/clj-kondo # TODO: docker image?
