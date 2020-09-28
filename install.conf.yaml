@@ -16,6 +16,16 @@
       path: vim/vimrc
       create: true
 
+# zsh configuration (zsh itself was installed with brew)
+- shell:
+    - description: Install oh-my-zsh
+      command: curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+- link:
+    ~/.zshrc:
+      path: zsh/.zshrc
+      create: true
+      relink: true
+
 # vscode
 - vscodefile:
     file: vscode/extensions.txt
