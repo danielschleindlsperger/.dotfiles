@@ -3,7 +3,7 @@ cask_args appdir: "/Applications"
 cask_args language: "en"
 
 ## applications
-# cask "iterm2"
+cask "kitty" # terminal emulator https://sw.kovidgoyal.net/kitty
 # cask "brave-browser"
 # cask "firefox"
 # cask "spotify"

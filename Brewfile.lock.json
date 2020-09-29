@@ -581,6 +581,15 @@
             "language": "en"
           }
         }
+      },
+      "kitty": {
+        "version": "0.18.3",
+        "options": {
+          "full_name": "kitty",
+          "args": {
+            "language": "en"
+          }
+        }
       }
     },
     "whalebrew": {
@@ -606,10 +615,10 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.5.2",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "380ea1c67ea561f21e653bfd77ac7c83a0438a76",
-        "CLT": "12.0.0.0.1.1599194153",
+        "Homebrew/homebrew-core": "0b6544fedc9e2232a12826922dfc3b12872ff410",
+        "CLT": "12.0.32.2",
         "Xcode": "11.3.1",
-        "macOS": "10.15.6"
+        "macOS": "10.15.7"
       }
     }
   }

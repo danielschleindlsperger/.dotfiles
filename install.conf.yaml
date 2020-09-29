@@ -11,6 +11,13 @@
       path: vim/vimrc
       create: true
 
+# kitty configuration (terminal emulator)
+- link:
+    ~/.config/kitty/kitty.conf:
+      path: kitty/kitty.conf
+      create: true
+      relink: true
+
 # zsh configuration (zsh itself was installed with brew)
 - shell:
     - description: Install oh-my-zsh
