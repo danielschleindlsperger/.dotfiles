@@ -70,3 +70,10 @@
       path: vscode/keybindings.json
       create: true
       relink: true
+
+# spectacle
+- link:
+    ~/Library/Application Support/Spectacle/Shortcuts.json:
+      path: spectacle/Shortcuts.json
+      create: true
+      relink: true

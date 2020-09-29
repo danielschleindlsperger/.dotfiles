@@ -5,16 +5,16 @@ cask_args language: "en"
 ## applications
 cask "kitty" # terminal emulator https://sw.kovidgoyal.net/kitty
 # cask "brave-browser"
-# cask "firefox"
-# cask "spotify"
+cask "firefox-developer-edition"
+cask "spotify"
 # cask "visual-studio-code"
-# cask "figma"
-# cask "tunnelblick" # openvpn https://tunnelblick.net/
-# cask "spectacle" # macos window management https://www.spectacleapp.com/
-# cask "alfred" # macos productivity app https://www.alfredapp.com/
-# cask "docker" # whales https://www.docker.com/
+cask "figma"
+cask "tunnelblick" # openvpn https://tunnelblick.net/
+cask "spectacle" # macos window management https://www.spectacleapp.com/
+cask "alfred" # macos productivity app https://www.alfredapp.com/
+cask "docker" # whales https://www.docker.com/
 # cask "1password" # password manager https://1password.com/
-# cask "slack" # more distracting email https://slack.com/
+cask "slack" # more distracting email https://slack.com/
 mas "Bear", id: 1091189122
 mas "Microsoft To Do", id: 1274495053
 # TODO: Email client (Outlook?)

@@ -590,6 +590,78 @@
             "language": "en"
           }
         }
+      },
+      "firefox-developer-edition": {
+        "version": "latest",
+        "options": {
+          "full_name": "firefox-developer-edition",
+          "args": {
+            "language": "en"
+          }
+        }
+      },
+      "spotify": {
+        "version": "latest",
+        "options": {
+          "full_name": "spotify",
+          "args": {
+            "language": "en"
+          }
+        }
+      },
+      "figma": {
+        "version": "latest",
+        "options": {
+          "full_name": "figma",
+          "args": {
+            "language": "en"
+          }
+        }
+      },
+      "tunnelblick": {
+        "version": "3.8.3a,5521",
+        "options": {
+          "full_name": "tunnelblick",
+          "args": {
+            "language": "en"
+          }
+        }
+      },
+      "spectacle": {
+        "version": "1.2",
+        "options": {
+          "full_name": "spectacle",
+          "args": {
+            "language": "en"
+          }
+        }
+      },
+      "alfred": {
+        "version": "4.1.1_1172",
+        "options": {
+          "full_name": "alfred",
+          "args": {
+            "language": "en"
+          }
+        }
+      },
+      "docker": {
+        "version": "2.3.0.5,48029",
+        "options": {
+          "full_name": "docker",
+          "args": {
+            "language": "en"
+          }
+        }
+      },
+      "slack": {
+        "version": "4.9.0",
+        "options": {
+          "full_name": "slack",
+          "args": {
+            "language": "en"
+          }
+        }
       }
     },
     "whalebrew": {
