@@ -48,10 +48,8 @@ redhat.vscode-yaml
 ricard.postcss
 robertoachar.vscode-essentials-snippets
 sasa.vscode-sass-format
-sbrink.elm
 scala-lang.scala
 scalameta.metals
-Shan.code-settings-sync
 shanoor.vscode-nginx
 sharat.vscode-brewfile
 shinnn.stylelint
