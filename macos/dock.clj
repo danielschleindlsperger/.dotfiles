@@ -68,7 +68,5 @@
     (doseq [item new-items]
       (add-to-dock! item))))
 
-(try  (println "\nupdating dock\n")
-      (execute!)
-      (println "\n")
+(try  (execute!)
       (catch Exception e (println e)))
