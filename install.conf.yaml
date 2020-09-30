@@ -77,3 +77,11 @@
       path: spectacle/Shortcuts.json
       create: true
       relink: true
+      force: true
+
+# macos
+- shell:
+    - description: Updating MacOS dock
+      command: ./macos/dock.clj
+      stdout: true
+      stderr: true

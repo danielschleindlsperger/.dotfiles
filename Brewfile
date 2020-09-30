@@ -4,16 +4,15 @@ cask_args language: "en"
 
 ## applications
 cask "kitty" # terminal emulator https://sw.kovidgoyal.net/kitty
-# cask "brave-browser"
 cask "firefox-developer-edition"
 cask "spotify"
-# cask "visual-studio-code"
+cask "visual-studio-code"
 cask "figma"
 cask "tunnelblick" # openvpn https://tunnelblick.net/
 cask "spectacle" # macos window management https://www.spectacleapp.com/
 cask "alfred" # macos productivity app https://www.alfredapp.com/
 cask "docker" # whales https://www.docker.com/
-# cask "1password" # password manager https://1password.com/
+cask "1password" # password manager https://1password.com/
 cask "slack" # more distracting email https://slack.com/
 mas "Bear", id: 1091189122
 mas "Microsoft To Do", id: 1274495053
@@ -38,6 +37,7 @@ brew "leiningen" # clojure build tool
 brew "scala"
 brew "sbt" # scala build tool https://www.scala-sbt.org/
 brew "shellcheck"
+brew "borkdude/brew/babashka" # interpreted clojure for cli scripting https://github.com/borkdude/babashka
 # TODO: php
 # brew "composer" # php package manager
 # TODO: ruby
@@ -66,3 +66,6 @@ whalebrew "whalebrew/helm" # kubernetes package manager https://helm.sh/
 whalebrew "whalebrew/terraform" # infrastructure as code https://www.terraform.io/
 
 # borkdude/brew/clj-kondo # TODO: docker image?
+
+# misc
+brew "dockutil" # manage macos dock items https://github.com/kcrawford/dockutil

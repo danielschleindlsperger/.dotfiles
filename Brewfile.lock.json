@@ -561,6 +561,10 @@
             "bison"
           ]
         }
+      },
+      "dockutil": {
+        "version": "2.0.5",
+        "bottle": false
       }
     },
     "cask": {
@@ -687,7 +691,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.5.2",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "0b6544fedc9e2232a12826922dfc3b12872ff410",
+        "Homebrew/homebrew-core": "90cdec57c33136cf5c0a0df81e25a729e36b64c5",
         "CLT": "12.0.32.2",
         "Xcode": "11.3.1",
         "macOS": "10.15.7"
