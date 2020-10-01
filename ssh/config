@@ -3,3 +3,9 @@ Host github.com
     HostName github.com
     PreferredAuthentications publickey
     IdentityFile ~/.ssh/id_rsa
+
+# codecentric
+Host github.com
+    HostName gitlab.codecentric.de
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/codecentric_rsa
