@@ -5,7 +5,7 @@ Host github.com
     IdentityFile ~/.ssh/id_rsa
 
 # codecentric
-Host github.com
+Host gitlab.codecentric.de
     HostName gitlab.codecentric.de
     PreferredAuthentications publickey
     IdentityFile ~/.ssh/codecentric_rsa
