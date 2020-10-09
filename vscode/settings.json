@@ -18,7 +18,7 @@
   "eslint.validate": ["javascript", "javascriptreact", "html", "typescriptreact"],
   "sassFormat.indent": 2,
   "javascript.validate.enable": true,
-  "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+  "workbench.colorTheme": "Community Material Theme Lighter High Contrast",
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "tslint.jsEnable": false,
