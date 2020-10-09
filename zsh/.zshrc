@@ -31,7 +31,9 @@ alias phpunit="vendor/bin/phpunit"
 #
 # AUTOCOMPLETIONS
 #
-## TODO
+autoload -Uz compinit && compinit
+autoload -Uz bashcompinit && bashcompinit
+complete -C '/usr/local/bin/aws_completer' aws
 
 # for some reason this needs to come after setting $PATH and after initializing oh-my-zsh
 source "$(brew --prefix asdf)/asdf.sh"

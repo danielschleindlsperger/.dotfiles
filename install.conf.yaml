@@ -27,6 +27,11 @@
       path: zsh/.zshrc
       create: true
       relink: true
+- link:
+    /usr/local/bin/aws_completer:
+      path: zsh/aws_completer
+      create: true
+      relink: true
 
 # languages
 - link:
