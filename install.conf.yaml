@@ -61,6 +61,11 @@
       global: 2.13.3
       versions:
         - 2.13.3
+    - plugin: golang
+      global: 1.13
+      versions:
+        - 1.13
+        - 1.10
     # TODO: php
 
 # vscode
