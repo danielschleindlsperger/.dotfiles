@@ -23,6 +23,7 @@ esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-complete-tag
 formulahendry.auto-rename-tag
+golang.go
 hashicorp.terraform
 hex-ci.stylelint-plus
 jacobdufault.fuzzy-search
