@@ -60,6 +60,7 @@ brew "watch"
 # brew "d12frosted/emacs-plus/emacs-plus@28" # emacs
 
 ## tools
+brew "azure-cli"
 whalebrew "whalebrew/awscli"
 whalebrew "whalebrew/ansible" # it automation https://docs.ansible.com/ansible/latest/index.html
 whalebrew "whalebrew/kubectl" # kubernetes control cli

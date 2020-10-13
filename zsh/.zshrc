@@ -15,8 +15,6 @@ export COMPLETION_WAITING_DOTS="true"
 
 export plugins=(git ssh-agent zsh-nvm vi-mode aws docker docker-compose)
 
-source "${ZSH}/oh-my-zsh.sh"
-source /usr/local/etc/profile.d/z.sh # source `z` utility, installed with brew
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -31,10 +29,15 @@ alias phpunit="vendor/bin/phpunit"
 #
 # AUTOCOMPLETIONS
 #
-autoload -Uz compinit && compinit
-autoload -Uz bashcompinit && bashcompinit
 complete -C '/usr/local/bin/aws_completer' aws
+
+autoload -U +X bashcompinit && bashcompinit
+source /usr/local/etc/bash_completion.d/az
 
 # for some reason this needs to come after setting $PATH and after initializing oh-my-zsh
 source "$(brew --prefix asdf)/asdf.sh"
 source ~/.asdf/plugins/java/set-java-home.zsh
+source /usr/local/etc/profile.d/z.sh
+
+# oh-my-zsh needs to come last
+source "${ZSH}/oh-my-zsh.sh"
