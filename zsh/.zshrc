@@ -26,18 +26,17 @@ export PATH="/Users/$USER/.emacs.d/bin:$PATH"
 alias composer="php /usr/local/bin/composer.phar"
 alias phpunit="vendor/bin/phpunit"
 
+# source oh-my-zsh BEFORE the completions
+source "${ZSH}/oh-my-zsh.sh"
+
 #
 # AUTOCOMPLETIONS
 #
-complete -C '/usr/local/bin/aws_completer' aws
 
-autoload -U +X bashcompinit && bashcompinit
+complete -C '/usr/local/bin/aws_completer' aws
 source /usr/local/etc/bash_completion.d/az
 
 # for some reason this needs to come after setting $PATH and after initializing oh-my-zsh
 source "$(brew --prefix asdf)/asdf.sh"
 source ~/.asdf/plugins/java/set-java-home.zsh
 source /usr/local/etc/profile.d/z.sh
-
-# oh-my-zsh needs to come last
-source "${ZSH}/oh-my-zsh.sh"
