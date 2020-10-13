@@ -3,6 +3,7 @@ cask_args appdir: "/Applications"
 cask_args language: "en"
 
 ## applications
+# if kitty does not open, install manually: `curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin`
 cask "kitty" # terminal emulator https://sw.kovidgoyal.net/kitty
 cask "firefox-developer-edition"
 cask "spotify"
