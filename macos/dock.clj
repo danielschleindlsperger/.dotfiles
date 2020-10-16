@@ -66,7 +66,11 @@
     (doseq [item existing-items]
       (remove-from-dock! (:name item)))
     (doseq [item new-items]
-      (add-to-dock! item))))
+      (add-to-dock! item)))
+  ;; configure dock size
+  (shell/sh "defaults" "write com.apple.dock tilesize -integer 40")
+  (shell/sh "killall" "Dock")
+  :success)
 
 (try  (execute!)
       (catch Exception e (println e)))
