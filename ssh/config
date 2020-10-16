@@ -9,9 +9,3 @@ Host gitlab.codecentric.de
     HostName gitlab.codecentric.de
     PreferredAuthentications publickey
     IdentityFile ~/.ssh/codecentric_rsa
-
-# AIFORA
-Host bitbucket.org
-    HostName bitbucket.org
-    PreferredAuthentications publickey
-    IdentityFile ~/.ssh/aifora_rsa
