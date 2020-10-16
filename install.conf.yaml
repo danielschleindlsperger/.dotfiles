@@ -91,6 +91,10 @@
 # macos
 - shell:
     - description: Updating MacOS dock
-      command: ./macos/dock.clj
+      command: ./macos/dock-items.clj
+      stdout: true
+      stderr: true
+    - description: Updating MacOS settings
+      command: ./macos/macos.sh
       stdout: true
       stderr: true
