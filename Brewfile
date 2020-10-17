@@ -32,6 +32,7 @@ brew "bison", link: true, force: true, conflicts_with: ["bison"] # TODO: link pr
 brew "mercurial"
 
 ## fonts
+tap "homebrew/cask-fonts"
 cask "font-fira-code-nerd-font"
 # TODO: more fonts
 
