@@ -5,14 +5,7 @@ export ZSH="/Users/${USER}/.oh-my-zsh"
 export ZSH_THEME="agnoster"
 export DEFAULT_USER="$USER"
 export HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
 export COMPLETION_WAITING_DOTS="true"
-
-export NVM_LAZY=true # lazy load nvm, node, npm in favor of faster shell startup time
 
 export plugins=(
   git
@@ -27,6 +20,8 @@ export plugins=(
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="/Users/$USER/.emacs.d/bin:$PATH"
+export NVM_LAZY=true # lazy load nvm, node, npm in favor of faster shell startup time
+export LANG=en_US.UTF-8
 
 #
 # ALIASES
