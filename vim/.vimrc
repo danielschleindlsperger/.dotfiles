@@ -1,13 +1,21 @@
 set nocompatible
 
-" TODO: Load plugins here (pathogen or vundle)
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+    Plug 'tpope/vim-surround'
+    " TODO: easymotion
+    " TODO: comment
+    " TODO: vinegar?
+    " TODO: coc?
+
+" Initialize plugin system
+call plug#end()
 
 syntax on
 
 filetype plugin indent on
 
-" TODO: Pick a leader key
-" let mapleader = ","
+let mapleader = ","
 
 " Security
 set modelines=0
@@ -60,5 +68,27 @@ set ignorecase
 set smartcase
 set showmatch
 
+" Window management
+
+" Tab through windows with Ctrl-{hjkl}
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+" More natural direction of opening new splits
+set splitbelow
+set splitright
+
+" Key rebindings
+
+" jj to exit insert mode (faster than Esc)
+inoremap jj <Esc>
+
 " Visualize tabs and newlines
 set listchars=tab:▸\ ,eol:¬
+
+" Theming
+
+" Mark active window
+highlight StatusLineNC cterm=bold ctermfg=white ctermbg=darkgray
+
