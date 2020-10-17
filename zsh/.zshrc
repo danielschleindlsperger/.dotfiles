@@ -28,10 +28,17 @@ alias phpunit="vendor/bin/phpunit"
 # source oh-my-zsh BEFORE the completions
 source "${ZSH}/oh-my-zsh.sh"
 
+# fix completions for homebrew installed stuff
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  rm -f ~/.zcompdump; compinit
+fi
+
 #
 # AUTOCOMPLETIONS
 #
-
 complete -C '/usr/local/bin/aws_completer' aws
 source /usr/local/etc/bash_completion.d/az
 
