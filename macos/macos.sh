@@ -268,7 +268,10 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain InitialKeyRepeat -int 5
+
+# Disable Apple's "PressAndHold" feature to be able to navigate better with vim
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
