@@ -12,8 +12,17 @@ export HYPHEN_INSENSITIVE="true"
 # Uncomment the following line to display red dots whilst waiting for completion.
 export COMPLETION_WAITING_DOTS="true"
 
-export plugins=(git ssh-agent zsh-nvm vi-mode aws docker docker-compose)
+export NVM_LAZY=true # lazy load nvm, node, npm in favor of faster shell startup time
 
+export plugins=(
+  git
+  nvm # still requires nvm to be installed
+  ssh-agent
+  vi-mode
+  aws
+  docker
+  docker-compose
+)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"

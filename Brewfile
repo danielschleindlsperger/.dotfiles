@@ -37,6 +37,7 @@ cask "font-fira-code-nerd-font"
 # TODO: more fonts
 
 ## languages
+brew "nvm" # node version manager https://github.com/nvm-sh/nvm
 brew "asdf" # version manager for almost all languages https://asdf-vm.com
 brew "leiningen" # clojure build tool
 brew "scala"
