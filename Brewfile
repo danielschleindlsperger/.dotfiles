@@ -67,7 +67,6 @@ brew "watch"
 brew "azure-cli"
 whalebrew "whalebrew/awscli"
 whalebrew "whalebrew/ansible" # it automation https://docs.ansible.com/ansible/latest/index.html
-whalebrew "whalebrew/kubectl" # kubernetes control cli
 whalebrew "whalebrew/helm" # kubernetes package manager https://helm.sh/
 whalebrew "whalebrew/terraform" # infrastructure as code https://www.terraform.io/
 
