@@ -6,6 +6,7 @@ cask_args language: "en"
 # if kitty does not open, install manually: `curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin`
 cask "kitty" # terminal emulator https://sw.kovidgoyal.net/kitty
 cask "firefox-developer-edition"
+cask "google-chrome"
 cask "spotify"
 cask "visual-studio-code"
 cask "figma"
