@@ -50,8 +50,9 @@
         - 12.18.4
         - 14.12.0
     - plugin: java
-      global: zulu-15.27.17
+      global: zulu-11.41.23
       versions:
+        - zulu-11.41.23
         - zulu-15.27.17
     - plugin: clojure
       global: 1.10.1
