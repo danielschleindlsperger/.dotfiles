@@ -21,7 +21,7 @@
 # zsh configuration (zsh itself was installed with brew)
 - shell:
     - description: Install oh-my-zsh
-      command: curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+      command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 - link:
     ~/.zshrc:
       path: zsh/.zshrc
