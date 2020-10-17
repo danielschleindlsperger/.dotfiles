@@ -43,6 +43,7 @@ brew "leiningen" # clojure build tool
 brew "scala"
 brew "sbt" # scala build tool https://www.scala-sbt.org/
 brew "shellcheck"
+tap "borkdude/brew/babashka"
 brew "borkdude/brew/babashka" # interpreted clojure for cli scripting https://github.com/borkdude/babashka
 # TODO: php
 # brew "composer" # php package manager
@@ -57,7 +58,7 @@ brew "httpie" # http client https://github.com/httpie/httpie
 brew "z" # jump around previous path locations in shell https://github.com/rupa/z/
 brew "fd" # 'find' in better https://github.com/sharkdp/fd
 brew "ripgrep" # `rg`, similar to ack, ag. recursively search current directory for string https://github.com/BurntSushi/ripgrep
-brew "the_silver_searcher" # `ag`, ack, but faseter https://github.com/ggreer/the_silver_searcher
+brew "the_silver_searcher" # `ag`, ack, but faster https://github.com/ggreer/the_silver_searcher
 brew "tree"
 brew "neovim" # vim but new
 brew "watch"
