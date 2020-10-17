@@ -2,7 +2,6 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/${USER}/.oh-my-zsh"
-
 export ZSH_THEME="agnoster"
 export DEFAULT_USER="$USER"
 export HYPHEN_INSENSITIVE="true"

@@ -20,6 +20,9 @@
 
 # zsh configuration (zsh itself was installed with brew)
 - shell:
+    - description: Fix insecure directories (for completions), see https://github.com/ohmyzsh/ohmyzsh/issues/8205
+      command: compaudit | xargs chmod g-w,o-w
+- shell:
     - description: Install oh-my-zsh
       command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 - link:
