@@ -270,8 +270,8 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 5
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Disable Apple's "PressAndHold" feature to be able to navigate better with vim
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
