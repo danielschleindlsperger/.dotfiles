@@ -271,7 +271,7 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 2
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Disable Apple's "PressAndHold" feature to be able to navigate better with vim
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
