@@ -3,12 +3,12 @@ set nocompatible
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
-    " TODO: easymotion
-    " TODO: comment
-    " TODO: vinegar?
-    " TODO: coc?
-
-" Initialize plugin system
+    Plug 'tpope/vim-commentary'
+    Plug 'prettier/vim-prettier', {
+      \ 'do': 'npm install',
+      \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+    Plug 'easymotion/vim-easymotion'
+    Plug 'tpope/vim-vinegar'
 call plug#end()
 
 syntax on
