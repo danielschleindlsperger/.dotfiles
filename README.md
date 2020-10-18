@@ -4,11 +4,9 @@ My personal [dotfiles](https://dotfiles.github.io/) managed by [dotbot](https://
 
 ## TODO
 
-- configure macos settings: https://github.com/mathiasbynens/dotfiles/blob/main/.macos
-- nvim config
 - emacs config
 
-## Initial setup
+## Initial Setup
 
 ```sh
 git clone https://github.com/danielschleindlsperger/.dotfiles ~/.dotfiles
@@ -16,7 +14,7 @@ cd ~/.dotfiles
 ./install.sh
 ```
 
-### Further Steps
+### Steps after Installation
 
 - Log into 1Password for secrets and keys
 - Import (or create) SSH private keys
