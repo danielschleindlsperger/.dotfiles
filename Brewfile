@@ -16,7 +16,9 @@ cask "alfred" # macos productivity app https://www.alfredapp.com/
 cask "docker" # whales https://www.docker.com/
 cask "1password" # password manager https://1password.com/
 cask "slack" # more distracting email https://slack.com/
-cask "dbeaver-community" # universal database gui https://dbeaver.io/
+# dbeaver requires fiddling with globally installed JDK, use the "Installer
+# version on the homepage instead"
+# cask "dbeaver-community" # universal database gui https://dbeaver.io/
 mas "Bear", id: 1091189122
 mas "Microsoft To Do", id: 1274495053
 mas "Be Focused - Focus Timer", id: 973134470
