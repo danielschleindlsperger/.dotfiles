@@ -92,3 +92,5 @@ set listchars=tab:▸\ ,eol:¬
 " Mark active window
 highlight StatusLineNC cterm=bold ctermfg=white ctermbg=darkgray
 
+" Yank to system clipboard
+set clipboard=unnamed
