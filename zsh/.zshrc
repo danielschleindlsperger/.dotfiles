@@ -51,3 +51,7 @@ source /usr/local/etc/bash_completion.d/az
 source "$(brew --prefix asdf)/asdf.sh"
 source ~/.asdf/plugins/java/set-java-home.zsh
 source /usr/local/etc/profile.d/z.sh
+
+# NVM - Node.js Version Manager
+export NVM_DIR="$HOME/.nvm"
+source "$(brew --prefix nvm)/nvm.sh"
