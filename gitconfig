@@ -10,4 +10,6 @@
 	excludesfile = ~/.gitignore_global
 	editor = /usr/bin/vim
 [pull]
-	ff = only
+	rebase = false
+[merge]
+	rebase = false
