@@ -61,14 +61,34 @@
   "vim.easymotionMarkerForegroundColorOneChar": "#eeeeee",
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": [" "],
+      "before": ["<space>"],
       "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "m"
+        }
+      ]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [" "],
+      "before": ["<space>"],
       "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "m"
+        }
+      ]
     }
   ],
   "vim.visualModeKeyBindings": [],
@@ -77,6 +97,155 @@
     {
       "before": ["j", "j"],
       "after": ["<Esc>"]
+    }
+  ],
+  "vspacecode.bindingOverrides": [
+    // Major mode: Clojure
+    {
+      "keys": ["m", "languageId:clojure"],
+      "name": "Major...",
+      "type": "conditional",
+      "bindings": [
+        {
+          "key": "=",
+          "name": "Format...",
+          "type": "bindings",
+          "bindings": [
+            {
+              "key": "=",
+              "name": "Format document",
+              "type": "command",
+              "command": "editor.action.formatDocument"
+            },
+            {
+              "key": "k",
+              "name": "Lisp Mode...",
+              "type": "bindings",
+              "bindings": [
+                {
+                  "key": "b",
+                  "name": "forward barf",
+                  "type": "command",
+                  "command": "paredit.barfSexpForward"
+                },
+                {
+                  "key": "B",
+                  "name": "backward barf",
+                  "type": "command",
+                  "command": "paredit.barfSexpBackward"
+                },
+                {
+                  "key": "s",
+                  "name": "forward slurp",
+                  "type": "command",
+                  "command": "paredit.slurpSexpForward"
+                },
+                {
+                  "key": "S",
+                  "name": "backward slurp",
+                  "type": "command",
+                  "command": "paredit.slurpSexpBackward"
+                }
+              ]
+            },
+            {
+              "key": "t",
+              "name": "Tests...",
+              "type": "bindings",
+              "bindings": [
+                {
+                  "key": "a",
+                  "name": "All tests",
+                  "type": "command",
+                  "command": "calva.runAllTests"
+                },
+                {
+                  "key": "n",
+                  "name": "All tests in namespace",
+                  "type": "command",
+                  "command": "calva.runNamespaceTests"
+                },
+                {
+                  "key": "r",
+                  "name": "Re-run failing tests in namespace",
+                  "type": "command",
+                  "command": "calva.rerunTests"
+                },
+                {
+                  "key": "t",
+                  "name": "Test at point",
+                  "type": "command",
+                  "command": "calva.runTestUnderCursor"
+                }
+              ]
+            },
+            {
+              "key": "m",
+              "name": "Manage REPLs",
+              "type": "bindings",
+              "bindings": [
+                {
+                  "key": "'",
+                  "name": "Jack-In or connect",
+                  "type": "command",
+                  "command": "calva.jackInOrConnect"
+                }
+              ]
+            },
+            {
+              "key": "e",
+              "name": "Evaluate",
+              "type": "bindings",
+              "bindings": [
+                {
+                  "key": "b",
+                  "name": "Evaluate buffer",
+                  "type": "command",
+                  "command": "calva.loadFile"
+                },
+                {
+                  "key": ";",
+                  "name": "Evaluate sexp",
+                  "type": "command",
+                  "command": "calva.evaluateCurrentTopLevelForm"
+                }
+              ]
+            },
+            {
+              "key": "g",
+              "name": "Go... (navigate)",
+              "type": "bindings",
+              "bindings": [
+                {
+                  "key": "g",
+                  "name": "Go to definition",
+                  "type": "command",
+                  "command": "editor.action.goToDeclaration"
+                },
+                {
+                  "key": "b",
+                  "name": "Go back",
+                  "type": "command",
+                  "command": "workbench.action.navigateBack"
+                }
+              ]
+            },
+            {
+              "key": "r",
+              "name": "Refactoring",
+              "type": "bindings",
+              "bindings": [
+                {
+                  "key": "r",
+                  "name": "Rename",
+                  "type": "command",
+                  "command": "editor.action.rename"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "[json]": {

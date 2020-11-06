@@ -5,6 +5,8 @@ My personal [dotfiles](https://dotfiles.github.io/) managed by [dotbot](https://
 ## TODO
 
 - emacs config
+- VSCode Spacemacs bindings
+  - General major mode bindings, hopefully defined once: rename, go to definition, go back, quick fix, etc...
 
 ## Initial Setup
 
