@@ -45,7 +45,6 @@ brew "leiningen" # clojure build tool
 brew "scala"
 brew "sbt" # scala build tool https://www.scala-sbt.org/
 brew "shellcheck"
-tap "borkdude/brew/babashka"
 brew "borkdude/brew/babashka" # interpreted clojure for cli scripting https://github.com/borkdude/babashka
 # TODO: php
 # brew "composer" # php package manager
