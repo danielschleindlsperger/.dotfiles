@@ -51,39 +51,18 @@
       relink: true
 
 # languages
+- shell:
+    command: asdf plugin add java
 - link:
     ~/.asdfrc:
       path: asdf/.asdfrc
       create: true
       relink: true
 - asdf:
-    - plugin: python
-      global: 3.8.5
-      versions:
-        - 3.8.5
-    - plugin: nodejs
-      global: 14.12.0
-      versions:
-        - 12.18.4
-        - 14.12.0
     - plugin: java
       global: zulu-11.41.23
       versions:
         - zulu-11.41.23
-        - zulu-15.27.17
-    - plugin: clojure
-      global: 1.10.1
-      versions:
-        - 1.10.1
-    - plugin: scala
-      global: 2.13.3
-      versions:
-        - 2.13.3
-    - plugin: golang
-      global: 1.15
-      versions:
-        - 1.15
-    # TODO: php
 
 # vscode
 - vscodefile:

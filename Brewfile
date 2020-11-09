@@ -40,10 +40,10 @@ cask "font-fira-code-nerd-font"
 
 ## languages
 brew "nvm" # node version manager https://github.com/nvm-sh/nvm
-brew "asdf" # version manager for almost all languages https://asdf-vm.com
 brew "leiningen" # clojure build tool
 brew "scala"
 brew "sbt" # scala build tool https://www.scala-sbt.org/
+brew "asdf"
 brew "shellcheck"
 brew "borkdude/brew/babashka" # interpreted clojure for cli scripting https://github.com/borkdude/babashka
 # TODO: php
