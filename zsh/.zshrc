@@ -19,7 +19,9 @@ export plugins=(
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export PATH="/Users/$USER/.emacs.d/bin:$PATH"
+export PATH="$HOME/.emacs.d/bin:$PATH"
+export PATH="/usr/local/share/dotnet:$PATH"
+export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
 export NVM_LAZY=true # lazy load nvm, node, npm in favor of faster shell startup time
 export LANG=en_US.UTF-8
 

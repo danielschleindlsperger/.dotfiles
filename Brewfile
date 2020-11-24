@@ -63,6 +63,7 @@ brew "the_silver_searcher" # `ag`, ack, but faster https://github.com/ggreer/the
 brew "tree"
 brew "neovim" # vim but new
 brew "watch"
+brew "postgresql@12"
 # emacs todo: checkout installation flags
 # brew "d12frosted/emacs-plus/emacs-plus@28" # emacs
 
