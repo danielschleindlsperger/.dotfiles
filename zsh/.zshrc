@@ -31,6 +31,9 @@ export LANG=en_US.UTF-8
 alias composer="php /usr/local/bin/composer.phar"
 alias phpunit="vendor/bin/phpunit"
 alias vim=nvim
+# Make kitty workable when using ssh
+# https://sw.kovidgoyal.net/kitty/faq.html#i-get-errors-about-the-terminal-being-unknown-or-opening-the-terminal-failing-when-sshing-into-a-different-computer
+alias ssh="kitty +kitten ssh"
 
 # source oh-my-zsh BEFORE the completions
 source "${ZSH}/oh-my-zsh.sh"
