@@ -19,6 +19,10 @@
       path: vim/.vimrc
       create: true
       force: true
+    ~/.ideavimrc:
+      path: vim/.ideavimrc
+      create: true
+      force: true
     ~/.config/nvim/init.vim:
       path: nvim/init.vim
       create: true

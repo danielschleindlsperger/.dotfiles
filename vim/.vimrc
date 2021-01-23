@@ -1,5 +1,3 @@
-set nocompatible
-
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
@@ -12,10 +10,11 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 syntax on
+set nocompatible
+let mapleader=" "
+set surround
 
 filetype plugin indent on
-
-let mapleader = ","
 
 " Security
 set modelines=0
