@@ -1,0 +1,86 @@
+shell:
+  program: /usr/local/bin/zsh
+  args:
+    - --login
+  # TODO: tmux
+  # args:
+  #   - -l
+  #   - -c
+  #   - "tmux attach || tmux"
+
+window:
+  # Spread additional padding evenly around the terminal content.
+  dynamic_padding: true
+  startup_mode: Windowed
+
+font:
+  size: 14.0
+  normal:
+    family: FiraCode Nerd Font
+    style: Medium
+  bold:
+    family: FiraCode Nerd Font
+    style: Bold
+  # Offset is the extra space around each character. `offset.y` can be thought of
+  # as modifying the line spacing, and `offset.x` as modifying the letter spacing
+  # I've given in 14 spacing which fits really well with my fonts, you may change it
+  # to your convenience but make sure to adjust 'glyph_offset' appropriately post that
+  offset:
+    x: 0
+    y: 14
+
+  # Note: This requires RESTART
+  # By default when you change the offset above you'll see an issue, where the texts are bottom
+  # aligned with the cursor, this is to make sure they center align.
+  # This offset should usually be 1/2 of the above offset-y being set.
+  glyph_offset:
+    x: 0
+    # Keeping this as half of offset to vertically align the text in cursor
+    y: 7
+
+  # Better font rendering for mac
+  use_thin_strokes: true
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: true
+
+# Live config reload (changes require restart)
+live_config_reload: true
+
+# Setup some amazing custom key bindings here - Best thing is you can setup key bindings
+# using Mac's 'command' to control your tmux.
+# A great reference: https://arslan.io/2018/02/05/gpu-accelerated-terminal-alacritty/#make-alacritty-feel-like-iterm2
+key_bindings:
+  # Use command + [ - to go to previous tmux window
+  - { key: LBracket, mods: Command, chars: "\x5c\x70" }
+  # Use command + ] - to go to previous tmux window
+  - { key: RBracket, mods: Command, chars: "\x5c\x6e" }
+  # ctrl-^ doesn't work in some terminals like alacritty
+  - { key: Key6, mods: Control, chars: "\x1e" }
+
+# Colors (Challenger Deep)
+colors:
+  primary:
+    background: '0x1b182c'
+    foreground: '0xcbe3e7'
+  normal:
+    black: '0x100e23'
+    red: '0xff8080'
+    green: '0x95ffa4'
+    yellow: '0xffe9aa'
+    blue: '0x91ddff'
+    magenta: '0xc991e1'
+    cyan: '0xaaffe4'
+    white: '0xcbe3e7'
+  bright:
+    black: '0x565575'
+    red: '0xff5458'
+    green: '0x62d196'
+    yellow: '0xffb378'
+    blue: '0x65b2ff'
+    magenta: '0x906cff'
+    cyan: '0x63f2f1'
+    white: '0xa6b3cc'

@@ -35,6 +35,13 @@
       create: true
       relink: true
 
+# alacritty configuration (gpu accelerated terminal)
+- link:
+    ~/.config/alacritty/alacritty.yml:
+      path: alacritty/alacritty.yml
+      create: true
+      relink: true
+
 # zsh configuration (zsh itself was installed with brew)
 - shell:
     - description: Fix insecure directories (for completions), see https://github.com/ohmyzsh/ohmyzsh/issues/8205
