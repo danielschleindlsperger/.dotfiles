@@ -15,6 +15,9 @@
     "vue-html": "html"
   },
   "emmet.triggerExpansionOnTab": true,
+  "tailwindCSS.includeLanguages": {
+    "plainText": "typescriptreact"
+  },
   "eslint.validate": ["javascript", "javascriptreact", "html", "typescriptreact"],
   "sassFormat.indent": 2,
   "javascript.validate.enable": true,
