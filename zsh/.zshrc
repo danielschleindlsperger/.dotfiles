@@ -22,13 +22,13 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH="/usr/local/share/dotnet:$PATH"
 export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
+export PATH="/Applications/Racket v7.9/bin:$PATH"
 export NVM_LAZY=true # lazy load nvm, node, npm in favor of faster shell startup time
 export LANG=en_US.UTF-8
 
 #
 # ALIASES
 #
-alias composer="php /usr/local/bin/composer.phar"
 alias phpunit="vendor/bin/phpunit"
 alias vim=nvim
 # Make kitty workable when using ssh

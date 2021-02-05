@@ -45,7 +45,7 @@ brew "asdf" # polyglot version manager
 brew "shellcheck"
 brew "borkdude/brew/babashka" # interpreted clojure for cli scripting https://github.com/borkdude/babashka
 # TODO: php
-# brew "composer" # php package manager
+brew "composer" # php package manager
 # TODO: ruby
 
 ## shell
