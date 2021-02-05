@@ -12,7 +12,6 @@ call plug#end()
 syntax on
 set nocompatible
 let mapleader=" "
-set surround
 
 filetype plugin indent on
 
