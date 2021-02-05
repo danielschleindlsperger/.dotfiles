@@ -17,9 +17,6 @@ cask "alfred" # macos productivity app https://www.alfredapp.com/
 cask "docker" # whales https://www.docker.com/
 cask "1password" # password manager https://1password.com/
 cask "slack" # more distracting email https://slack.com/
-# dbeaver requires fiddling with globally installed JDK, use the "Installer
-# version on the homepage instead"
-# cask "dbeaver-community" # universal database gui https://dbeaver.io/
 mas "Bear", id: 1091189122
 mas "Microsoft To Do", id: 1274495053
 mas "Be Focused - Focus Timer", id: 973134470
@@ -44,7 +41,7 @@ brew "nvm" # node version manager https://github.com/nvm-sh/nvm
 brew "leiningen" # clojure build tool
 brew "scala"
 brew "sbt" # scala build tool https://www.scala-sbt.org/
-brew "asdf"
+brew "asdf" # polyglot version manager
 brew "shellcheck"
 brew "borkdude/brew/babashka" # interpreted clojure for cli scripting https://github.com/borkdude/babashka
 # TODO: php
@@ -58,7 +55,7 @@ brew "htop"
 brew "jq"
 brew "httpie" # http client https://github.com/httpie/httpie
 brew "z" # jump around previous path locations in shell https://github.com/rupa/z/
-brew "fd" # 'find' in better https://github.com/sharkdp/fd
+brew "fd" # 'find' but better https://github.com/sharkdp/fd
 brew "ripgrep" # `rg`, similar to ack, ag. recursively search current directory for string https://github.com/BurntSushi/ripgrep
 brew "the_silver_searcher" # `ag`, ack, but faster https://github.com/ggreer/the_silver_searcher
 brew "tree"
