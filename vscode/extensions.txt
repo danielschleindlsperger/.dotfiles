@@ -58,7 +58,6 @@ scala-lang.scala
 scalameta.metals
 shanoor.vscode-nginx
 sharat.vscode-brewfile
-shinnn.stylelint
 sidthesloth.html5-boilerplate
 stylelint.vscode-stylelint
 timonwong.shellcheck
