@@ -54,8 +54,8 @@
       create: true
       relink: true
 - shell:
-    description: 'Clone Doom Emacs if not installed yet. Use rolling releases otherwise.'
-    command: ./doom-emacs/clone-doom-repo.sh
+    - description: 'Clone Doom Emacs if not installed yet. Use rolling releases otherwise.'
+      command: './doom-emacs/clone-doom-repo.sh'
 
 # languages
 - shell:
