@@ -34,7 +34,7 @@
       command: compaudit | xargs chmod g-w,o-w
 - shell:
     - description: Install oh-my-zsh
-      command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      command: ./zsh/install-oh-my-zsh.sh
 - link:
     ~/.zshrc:
       path: zsh/.zshrc
