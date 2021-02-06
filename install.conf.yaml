@@ -28,21 +28,7 @@
       create: true
       force: true
 
-# kitty configuration (terminal emulator)
-- link:
-    ~/.config/kitty/kitty.conf:
-      path: kitty/kitty.conf
-      create: true
-      relink: true
-
-# alacritty configuration (gpu accelerated terminal)
-- link:
-    ~/.config/alacritty/alacritty.yml:
-      path: alacritty/alacritty.yml
-      create: true
-      relink: true
-
-# zsh configuration (zsh itself was installed with brew)
+# zsh configuration
 - shell:
     - description: Fix insecure directories (for completions), see https://github.com/ohmyzsh/ohmyzsh/issues/8205
       command: compaudit | xargs chmod g-w,o-w
