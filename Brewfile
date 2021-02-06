@@ -73,4 +73,5 @@ whalebrew "whalebrew/terraform" # infrastructure as code https://www.terraform.i
 # borkdude/brew/clj-kondo # TODO: docker image?
 
 # misc
+brew "scc" # SLOC utility
 brew "dockutil" # manage macos dock items https://github.com/kcrawford/dockutil
