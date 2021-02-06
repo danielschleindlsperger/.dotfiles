@@ -63,8 +63,7 @@ brew "tree"
 brew "neovim" # vim but new
 brew "watch"
 brew "postgresql@12"
-# emacs todo: checkout installation flags
-# brew "d12frosted/emacs-plus/emacs-plus@28" # emacs
+brew "d12frosted/emacs-plus/emacs-plus@27" # emacs
 
 ## tools
 brew "azure-cli"
