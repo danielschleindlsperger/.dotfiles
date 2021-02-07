@@ -81,7 +81,7 @@
 (global-subword-mode 1)                           ; Iterate through CamelCase words
 (use-package! evil-escape
   :init
-  (setq evil-escape-key-sequence "jj"))           ; Exit insert mode with "jj" instead of <Esc>
+  (setq evil-escape-key-sequence "kj"))           ; Exit insert mode with "kj" instead of <Esc>
 
 (setq shackle-default-alignment 'right)
 
