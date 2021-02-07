@@ -12,7 +12,7 @@
 
 (def sections (sorted-map
                "browsers" ["Firefox Developer Edition" "Safari" "Google Chrome"]
-               "dev" ["kitty" "Visual Studio Code"]
+               "dev" ["iTerm" "Visual Studio Code"]
                "productivity" ["1Password 7" "Microsoft To Do" "Bear"]
                "persistent-apps" ["Spotify" "Figma" "Docker"]))
 
