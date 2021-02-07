@@ -85,14 +85,14 @@
 
 (setq shackle-default-alignment 'right)
 
-;; Open Clojure CIDR repl to the right (doesn't work right now)
-;; (after! clojure-mode
-;;   (set-popup-rule! "^ \\*" :regexp t :size 0.25 :vslot -4 :side 'right))
-;; (set! :popup "^\\*cider" :regexp t :noselect t :noesc t :side 'right :size 0.25)
+;; Open Clojure CIDER REPL to the right
+(after! cider
+  (set-popup-rule! "^\\*cider" :regexp t :noselect t :noesc t :size 0.38 :side 'right))
 
+
+;; Open terminals to the right
 (after! vterm
-  (set-popup-rule! "*doom:vterm-popup:main" :size 0.25 :select t :quit nil :ttl 0 :side 'right)
-  )
+  (set-popup-rule! "*doom:vterm-popup:main" :size 0.38 :select t :quit nil :ttl 0 :side 'right))
 
 ;; Explicitly set racket binaries. Apparently they're not picked up from .zshrc
 (setq racket-racket-program "/Applications/Racket v7.9/bin/racket")
