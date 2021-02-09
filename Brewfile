@@ -42,6 +42,7 @@ brew "scala"
 brew "sbt" # scala build tool https://www.scala-sbt.org/
 brew "asdf" # polyglot version manager
 brew "shellcheck"
+brew "janet" # https://janet-lang.org
 brew "borkdude/brew/babashka" # interpreted clojure for cli scripting https://github.com/borkdude/babashka
 # TODO: php
 brew "composer" # php package manager
