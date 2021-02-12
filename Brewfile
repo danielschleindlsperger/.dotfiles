@@ -29,6 +29,7 @@ brew "readline"
 brew "bison", link: true, force: true, conflicts_with: ["bison"] # TODO: link properly, this is currently broken
 brew "mercurial"
 brew "cmake"
+brew "entr" # file watcher
 
 ## fonts
 tap "homebrew/cask-fonts"
