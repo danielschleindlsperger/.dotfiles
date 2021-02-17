@@ -29,6 +29,7 @@ brew "readline"
 brew "bison", link: true, force: true, conflicts_with: ["bison"] # TODO: link properly, this is currently broken
 brew "mercurial"
 brew "cmake"
+brew "entr" # file watcher
 
 ## fonts
 tap "homebrew/cask-fonts"
@@ -42,6 +43,7 @@ brew "scala"
 brew "sbt" # scala build tool https://www.scala-sbt.org/
 brew "asdf" # polyglot version manager
 brew "shellcheck"
+brew "janet" # https://janet-lang.org
 brew "borkdude/brew/babashka" # interpreted clojure for cli scripting https://github.com/borkdude/babashka
 # TODO: php
 brew "composer" # php package manager
