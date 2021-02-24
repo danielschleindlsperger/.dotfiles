@@ -16,8 +16,8 @@ nmap <leader>jl :action KJumpAction.Line<cr>
 set notimeout
 set ttimeout
 
-" jj to exit insert mode (faster than Esc)
-inoremap jj <Esc>
+" kj to exit insert mode (faster than Esc)
+inoremap kj <Esc>
 
 " Add semi and esc
 noremap <leader>; <Esc>$r;
