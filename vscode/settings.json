@@ -98,7 +98,7 @@
   "vim.normalModeKeyBindings": [],
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
+      "before": ["k", "j"],
       "after": ["<Esc>"]
     }
   ],
