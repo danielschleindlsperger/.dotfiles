@@ -31,7 +31,8 @@ export LANG=en_US.UTF-8
 # ALIASES
 #
 alias phpunit="vendor/bin/phpunit"
-alias vim=nvim
+alias vim="nvim"
+alias k="kubectl"
 
 # source oh-my-zsh BEFORE the completions
 source "${ZSH}/oh-my-zsh.sh"
