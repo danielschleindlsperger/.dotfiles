@@ -79,8 +79,8 @@ set splitright
 
 " Key rebindings
 
-" jj to exit insert mode (faster than Esc)
-inoremap jj <Esc>
+" kj to exit insert mode (faster than Esc)
+inoremap kj <Esc>
 
 " Visualize tabs and newlines
 set listchars=tab:▸\ ,eol:¬
