@@ -67,9 +67,10 @@ brew "d12frosted/emacs-plus/emacs-plus@27" # emacs
 
 ## tools
 brew "azure-cli"
+brew "helm" # kubernetes package manager https://helm.sh/
+brew "kubectl"
 whalebrew "whalebrew/awscli"
 whalebrew "whalebrew/ansible" # it automation https://docs.ansible.com/ansible/latest/index.html
-whalebrew "whalebrew/helm" # kubernetes package manager https://helm.sh/
 whalebrew "whalebrew/terraform" # infrastructure as code https://www.terraform.io/
 
 # borkdude/brew/clj-kondo # TODO: docker image?
