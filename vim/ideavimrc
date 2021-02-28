@@ -71,12 +71,8 @@ nnoremap <leader>oo :action MoveEditorToOppositeTabGroup<cr>
 nnoremap <leader>wd :action CloseContent<cr>
 " window in project view 
 nnoremap <leader>wp :action SelectInProjectView<cr> 
-" TODO
-" Tab through windows with Ctrl-{hjkl}
-" nnoremap <C-J> <C-W><C-J>
-" nnoremap <C-K> <C-W><C-K>
-" nnoremap <C-L> <C-W><C-L>
-" nnoremap <C-H> <C-W><C-H>
+nnoremap <C-H> :action PreviousTab<cr>
+nnoremap <C-L> :action NextTab<cr>
 
 " Comments
 nnoremap <leader>cl :action CommentByLineComment<cr>
