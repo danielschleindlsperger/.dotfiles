@@ -59,7 +59,6 @@
   "editor.gotoLocation.multipleReferences": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.lineNumbers": "relative",
-  "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "#111111",
   "vim.easymotionMarkerForegroundColorOneChar": "#eeeeee",
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -284,5 +283,30 @@
     "**/.metals": true,
     "**/.ammonite": true,
     "**/target": true
-  }
+  },
+  "python.languageServer": "Pylance",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "window.zoomLevel": 1,
+  "vim.easymotion": true,
+  "vim.leader": "space"
 }
