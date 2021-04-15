@@ -50,13 +50,15 @@ nnoremap <leader>fs :action SaveAll<cr>
 
 " Go Places
 " gd goes to definition by default
+nnoremap <C--> :action Back<cr>
 nnoremap gT :action GotoTest<cr>
 nnoremap gi :action GotoImplementation<cr>
 nnoremap gn :action GotoNextError<cr>
 nnoremap gp :action GotoPreviousError<cr>
-nnoremap gr :action PreviousTab<cr>
-nnoremap gt :action NextTab<cr>
 nnoremap gu :action ShowUsages<cr>
+" Move up down in lists
+map <C-j> <Action>(EditorDown)
+map <C-k> <Action>(EditorUp)
 
 " Git
 nnoremap <leader>gC :action Git.ResolveConflicts<cr>
@@ -71,8 +73,8 @@ nnoremap <leader>oo :action MoveEditorToOppositeTabGroup<cr>
 nnoremap <leader>wd :action CloseContent<cr>
 " window in project view 
 nnoremap <leader>wp :action SelectInProjectView<cr> 
-nnoremap <C-H> :action PreviousTab<cr>
-nnoremap <C-L> :action NextTab<cr>
+nnoremap <C-h> :action PreviousTab<cr>
+nnoremap <C-l> :action NextTab<cr>
 
 " Comments
 nnoremap <leader>cl :action CommentByLineComment<cr>
@@ -107,10 +109,14 @@ nnoremap <leader>y :action PasteMultiple<CR>
 """"
 """" Cursive Clojure
 """"
+
+" 'evaluate form'
 noremap <leader>ef :action :cursive.repl.actions/run-top-sexp<CR>
 noremap <leader>r :action :cursive.repl.actions/jump-to-repl<CR>
+" 'tests'
 noremap <leader>t :action Cursive.Repl.Command.ReplRunTests<CR> 
-noremap <leader>rs :action Cursive.Repl.Command.DevRestartServer<CR> 
+" 'reload system'
+noremap <leader>rs :action Cursive.Repl.Command.IntegrantReset<CR> 
 
 " vim delete and change, with sexps!
 map <leader>x :action :cursive.actions.paredit/kill-sexp<CR>
