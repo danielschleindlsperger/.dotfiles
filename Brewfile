@@ -69,6 +69,7 @@ brew "d12frosted/emacs-plus/emacs-plus@27" # emacs
 brew "azure-cli"
 brew "helm" # kubernetes package manager https://helm.sh/
 brew "kubectl"
+brew "goose" # database migrations
 whalebrew "whalebrew/awscli"
 whalebrew "whalebrew/ansible" # it automation https://docs.ansible.com/ansible/latest/index.html
 whalebrew "whalebrew/terraform" # infrastructure as code https://www.terraform.io/
