@@ -112,6 +112,8 @@ nnoremap <leader>y :action PasteMultiple<CR>
 
 " 'evaluate form'
 noremap <leader>ef :action :cursive.repl.actions/run-top-sexp<CR>
+" 'evaluate buffer'
+noremap <leader>eb :action :cursive.repl.actions/load-file<CR>
 noremap <leader>r :action :cursive.repl.actions/jump-to-repl<CR>
 " 'tests'
 noremap <leader>t :action Cursive.Repl.Command.ReplRunTests<CR> 
