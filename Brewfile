@@ -17,7 +17,7 @@ cask "1password" # password manager https://1password.com/
 cask "slack" # more distracting email https://slack.com/
 mas "Bear", id: 1091189122
 mas "Microsoft To Do", id: 1274495053
-mas "Be Focused - Focus Timer", id: 973134470
+# mas "Be Focused - Focus Timer", id: 973134470
 
 # core stuff
 brew "coreutils"
