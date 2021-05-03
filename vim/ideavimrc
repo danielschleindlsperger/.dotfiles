@@ -116,9 +116,9 @@ noremap <leader>ef :action :cursive.repl.actions/run-top-sexp<CR>
 noremap <leader>eb :action :cursive.repl.actions/load-file<CR>
 noremap <leader>r :action :cursive.repl.actions/jump-to-repl<CR>
 " 'tests'
-noremap <leader>t :action Cursive.Repl.Command.ReplRunTests<CR> 
+noremap <leader>t :action :cursive.testing.actions/run-ns-tests<CR>
 " 'reload system'
-noremap <leader>rs :action Cursive.Repl.Command.IntegrantReset<CR> 
+noremap <leader>rs :action Cursive.Repl.Command.IntegrantReset<CR>
 
 " vim delete and change, with sexps!
 map <leader>x :action :cursive.actions.paredit/kill-sexp<CR>
