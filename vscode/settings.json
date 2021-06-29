@@ -4,13 +4,12 @@
   "editor.rulers": [100],
   "editor.minimap.enabled": false,
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "editor.lineHeight": 25,
   "editor.smoothScrolling": true,
   "editor.detectIndentation": true,
   "editor.tabSize": 2,
   "editor.renderWhitespace": "boundary",
-  "window.zoomLevel": 0,
   "emmet.includeLanguages": {
     "vue-html": "html"
   },
@@ -21,7 +20,7 @@
   "eslint.validate": ["javascript", "javascriptreact", "html", "typescriptreact"],
   "sassFormat.indent": 2,
   "javascript.validate.enable": true,
-  "workbench.colorTheme": "Community Material Theme Lighter High Contrast",
+  "workbench.colorTheme": "Solarized Light",
   "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
   "tslint.jsEnable": false,
@@ -77,22 +76,22 @@
       ]
     }
   ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<space>"],
-      "commands": ["vspacecode.space"]
-    },
-    {
-      "before": [","],
-      "commands": [
-        "vspacecode.space",
-        {
-          "command": "whichkey.triggerKey",
-          "args": "m"
-        }
-      ]
-    }
-  ],
+  // "vim.normalModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["<space>"],
+  //     "commands": ["vspacecode.space"]
+  //   },
+  //   {
+  //     "before": [","],
+  //     "commands": [
+  //       "vspacecode.space",
+  //       {
+  //         "command": "whichkey.triggerKey",
+  //         "args": "m"
+  //       }
+  //     ]
+  //   }
+  // ],
   "vim.visualModeKeyBindings": [],
   "vim.normalModeKeyBindings": [],
   "vim.insertModeKeyBindings": [
@@ -101,155 +100,155 @@
       "after": ["<Esc>"]
     }
   ],
-  "vspacecode.bindingOverrides": [
-    // Major mode: Clojure
-    {
-      "keys": ["m", "languageId:clojure"],
-      "name": "Major...",
-      "type": "conditional",
-      "bindings": [
-        {
-          "key": "=",
-          "name": "Format...",
-          "type": "bindings",
-          "bindings": [
-            {
-              "key": "=",
-              "name": "Format document",
-              "type": "command",
-              "command": "editor.action.formatDocument"
-            },
-            {
-              "key": "k",
-              "name": "Lisp Mode...",
-              "type": "bindings",
-              "bindings": [
-                {
-                  "key": "b",
-                  "name": "forward barf",
-                  "type": "command",
-                  "command": "paredit.barfSexpForward"
-                },
-                {
-                  "key": "B",
-                  "name": "backward barf",
-                  "type": "command",
-                  "command": "paredit.barfSexpBackward"
-                },
-                {
-                  "key": "s",
-                  "name": "forward slurp",
-                  "type": "command",
-                  "command": "paredit.slurpSexpForward"
-                },
-                {
-                  "key": "S",
-                  "name": "backward slurp",
-                  "type": "command",
-                  "command": "paredit.slurpSexpBackward"
-                }
-              ]
-            },
-            {
-              "key": "t",
-              "name": "Tests...",
-              "type": "bindings",
-              "bindings": [
-                {
-                  "key": "a",
-                  "name": "All tests",
-                  "type": "command",
-                  "command": "calva.runAllTests"
-                },
-                {
-                  "key": "n",
-                  "name": "All tests in namespace",
-                  "type": "command",
-                  "command": "calva.runNamespaceTests"
-                },
-                {
-                  "key": "r",
-                  "name": "Re-run failing tests in namespace",
-                  "type": "command",
-                  "command": "calva.rerunTests"
-                },
-                {
-                  "key": "t",
-                  "name": "Test at point",
-                  "type": "command",
-                  "command": "calva.runTestUnderCursor"
-                }
-              ]
-            },
-            {
-              "key": "m",
-              "name": "Manage REPLs",
-              "type": "bindings",
-              "bindings": [
-                {
-                  "key": "'",
-                  "name": "Jack-In or connect",
-                  "type": "command",
-                  "command": "calva.jackInOrConnect"
-                }
-              ]
-            },
-            {
-              "key": "e",
-              "name": "Evaluate",
-              "type": "bindings",
-              "bindings": [
-                {
-                  "key": "b",
-                  "name": "Evaluate buffer",
-                  "type": "command",
-                  "command": "calva.loadFile"
-                },
-                {
-                  "key": ";",
-                  "name": "Evaluate sexp",
-                  "type": "command",
-                  "command": "calva.evaluateCurrentTopLevelForm"
-                }
-              ]
-            },
-            {
-              "key": "g",
-              "name": "Go... (navigate)",
-              "type": "bindings",
-              "bindings": [
-                {
-                  "key": "g",
-                  "name": "Go to definition",
-                  "type": "command",
-                  "command": "editor.action.goToDeclaration"
-                },
-                {
-                  "key": "b",
-                  "name": "Go back",
-                  "type": "command",
-                  "command": "workbench.action.navigateBack"
-                }
-              ]
-            },
-            {
-              "key": "r",
-              "name": "Refactoring",
-              "type": "bindings",
-              "bindings": [
-                {
-                  "key": "r",
-                  "name": "Rename",
-                  "type": "command",
-                  "command": "editor.action.rename"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  // "vspacecode.bindingOverrides": [
+  //   // Major mode: Clojure
+  //   {
+  //     "keys": ["m", "languageId:clojure"],
+  //     "name": "Major...",
+  //     "type": "conditional",
+  //     "bindings": [
+  //       {
+  //         "key": "=",
+  //         "name": "Format...",
+  //         "type": "bindings",
+  //         "bindings": [
+  //           {
+  //             "key": "=",
+  //             "name": "Format document",
+  //             "type": "command",
+  //             "command": "editor.action.formatDocument"
+  //           },
+  //           {
+  //             "key": "k",
+  //             "name": "Lisp Mode...",
+  //             "type": "bindings",
+  //             "bindings": [
+  //               {
+  //                 "key": "b",
+  //                 "name": "forward barf",
+  //                 "type": "command",
+  //                 "command": "paredit.barfSexpForward"
+  //               },
+  //               {
+  //                 "key": "B",
+  //                 "name": "backward barf",
+  //                 "type": "command",
+  //                 "command": "paredit.barfSexpBackward"
+  //               },
+  //               {
+  //                 "key": "s",
+  //                 "name": "forward slurp",
+  //                 "type": "command",
+  //                 "command": "paredit.slurpSexpForward"
+  //               },
+  //               {
+  //                 "key": "S",
+  //                 "name": "backward slurp",
+  //                 "type": "command",
+  //                 "command": "paredit.slurpSexpBackward"
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             "key": "t",
+  //             "name": "Tests...",
+  //             "type": "bindings",
+  //             "bindings": [
+  //               {
+  //                 "key": "a",
+  //                 "name": "All tests",
+  //                 "type": "command",
+  //                 "command": "calva.runAllTests"
+  //               },
+  //               {
+  //                 "key": "n",
+  //                 "name": "All tests in namespace",
+  //                 "type": "command",
+  //                 "command": "calva.runNamespaceTests"
+  //               },
+  //               {
+  //                 "key": "r",
+  //                 "name": "Re-run failing tests in namespace",
+  //                 "type": "command",
+  //                 "command": "calva.rerunTests"
+  //               },
+  //               {
+  //                 "key": "t",
+  //                 "name": "Test at point",
+  //                 "type": "command",
+  //                 "command": "calva.runTestUnderCursor"
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             "key": "m",
+  //             "name": "Manage REPLs",
+  //             "type": "bindings",
+  //             "bindings": [
+  //               {
+  //                 "key": "'",
+  //                 "name": "Jack-In or connect",
+  //                 "type": "command",
+  //                 "command": "calva.jackInOrConnect"
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             "key": "e",
+  //             "name": "Evaluate",
+  //             "type": "bindings",
+  //             "bindings": [
+  //               {
+  //                 "key": "b",
+  //                 "name": "Evaluate buffer",
+  //                 "type": "command",
+  //                 "command": "calva.loadFile"
+  //               },
+  //               {
+  //                 "key": ";",
+  //                 "name": "Evaluate sexp",
+  //                 "type": "command",
+  //                 "command": "calva.evaluateCurrentTopLevelForm"
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             "key": "g",
+  //             "name": "Go... (navigate)",
+  //             "type": "bindings",
+  //             "bindings": [
+  //               {
+  //                 "key": "g",
+  //                 "name": "Go to definition",
+  //                 "type": "command",
+  //                 "command": "editor.action.goToDeclaration"
+  //               },
+  //               {
+  //                 "key": "b",
+  //                 "name": "Go back",
+  //                 "type": "command",
+  //                 "command": "workbench.action.navigateBack"
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             "key": "r",
+  //             "name": "Refactoring",
+  //             "type": "bindings",
+  //             "bindings": [
+  //               {
+  //                 "key": "r",
+  //                 "name": "Rename",
+  //                 "type": "command",
+  //                 "command": "editor.action.rename"
+  //               }
+  //             ]
+  //           }
+  //         ]
+  //       }
+  //     ]
+  //   }
+  // ],
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -285,12 +284,9 @@
     "**/target": true
   },
   "python.languageServer": "Pylance",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -306,7 +302,10 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "window.zoomLevel": 1,
   "vim.easymotion": true,
-  "vim.leader": "space"
+  "vim.leader": "space",
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/danielschleindlsperger/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+  "c4.plantuml.generator": "C4PlantUMLWriter",
+  "redhat.telemetry.enabled": false,
+  "window.zoomLevel": -1
 }

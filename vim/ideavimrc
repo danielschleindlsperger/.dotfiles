@@ -57,8 +57,8 @@ nnoremap gn :action GotoNextError<cr>
 nnoremap gp :action GotoPreviousError<cr>
 nnoremap gu :action ShowUsages<cr>
 " Move up down in lists
-map <C-j> <Action>(EditorDown)
-map <C-k> <Action>(EditorUp)
+nnoremap <C-j> :action EditorDown<cr>
+nnoremap <C-k> :action EditorUp<cr>
 
 " Git
 nnoremap <leader>gC :action Git.ResolveConflicts<cr>
@@ -116,9 +116,11 @@ noremap <leader>ef :action :cursive.repl.actions/run-top-sexp<CR>
 noremap <leader>eb :action :cursive.repl.actions/load-file<CR>
 noremap <leader>r :action :cursive.repl.actions/jump-to-repl<CR>
 " 'tests'
-noremap <leader>t :action :cursive.testing.actions/run-ns-tests<CR>
-" 'reload system'
-noremap <leader>rs :action Cursive.Repl.Command.IntegrantReset<CR>
+noremap <leader>t :action :cursive.testing.actions/run-ns-tests<CR> 
+
+" 'reload system' - This is a custom REPL command that must be added manually
+" inside IntelliJ and Cursive!
+noremap <leader>rs :action Cursive.Repl.Command.IntegrantReset<CR> 
 
 " vim delete and change, with sexps!
 map <leader>x :action :cursive.actions.paredit/kill-sexp<CR>
@@ -149,9 +151,6 @@ map <leader>" :action :cursive.actions.paredit/wrap-quotes<CR>
 
 " Cycle collection
 map <leader>C :action :cursive.actions.paredit/cycle-collection-type<CR>
-
-" Evaluate sexp like in vim-fireplace
-map cpp :action :cursive.repl.actions/run-top-sexp<CR>
 
 " Force a single "parinference" when in paredit mode and reformat
 map <leader>rp :action :cursive.actions.paredit/toggle<CR>:action :cursive.actions.paredit/toggle<CR>kj:action :cursive.actions.paredit/toggle<CR>:action ReformatCode<CR>
